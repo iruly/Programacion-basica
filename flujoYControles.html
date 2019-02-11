@@ -1,1 +1,44 @@
 
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>tu peso en otro planeta</h1>
+    <p>en la tierrra pesas menos que en marte o en jupiter</p>
+
+  <script type="text/javascript">
+
+  var usuario = prompt("cual es tu peso");
+  var  planeta = prompt ("elige tu planeta, 1 es marte y 2 es Jupiter");
+  var peso = parseInt(usuario);
+  var g_tierra= 9.8;
+  var g_marte= 3.7;
+  var g_jupiter= 3.8;
+  //var peso = 55;
+  var peso_final;
+  // condicional si plenata es igual a 1 operacion en marte sino(else) else is significa sino si planeta es igual a 2
+
+  if (planeta == 1)
+  {
+    peso_final = peso * g_marte / g_tierra;
+  }
+  else if (planeta == 2)
+   {
+
+    peso_final = peso * g_jupiter / g_tierra;
+  }
+  else {
+    peso_final  = 3000000200;
+  }
+
+    peso_final  = parseInt(peso_final);
+
+    document.write ("tu peso es de  <strong>:  "  +  peso_final + " kilos  </strong>");
+
+  </script>
+  </body>
+</html>
