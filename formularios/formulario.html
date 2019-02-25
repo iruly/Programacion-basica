@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Formulario</h1>
+
+    <form class="" action="index.html" method="post">
+
+<!--  para que esten relacionados el input con el label es asi-->
+<!--  <label for="nombre">   Ingresa tu nombre   </label>
+<input  id="nombre" type="text"  name="nombre" value="">
+<button type="button" name="button">  Enviar  </button>-->
+<fieldset>
+  <legend>tus datos personales</legend>
+
+<div>
+  <input   id="username" type="text"  name="username" placeholder="ingre su nombre de usuario">
+  </div>
+
+  <div>
+<label>  Ingrese su contraseña
+<input id="password" type="password" name="password" required >
+  </label>
+</div>
+</fieldset>
+
+<fieldset>
+  <legend>Datos secundarios </legend>
+<div class="">
+  <label> ingrsar correo
+  <input type="email" name="" required>
+  </label>
+</div>
+
+<div>
+  <label> fecha de nacimiento
+  <input type="date" name="" value="">
+  </label>
+</div>
+
+<div>
+  <label> Numero telefonico
+  <input type="number" name="" value="2" readonly>
+  </label>
+
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Tus pasatiempos</legend>
+  <label>
+    <input type="checkbox" name="" value="">
+    Deporte</label>
+    <label for="">
+
+<input type="checkbox" name="" value="">
+    cine</label>
+    <label for="">
+<input type="checkbox" name="" value="">
+    musica</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Tu genero</legend>
+<label>
+<input type="radio" name="genero">
+Hombre</label>
+
+<label>
+<input type="radio" name="genero">
+Mujer</label>
+<label>
+
+<input type="radio" name="genero">
+Otros</label>
+
+</fieldset>
+
+
+<fieldset>
+  <legend>Escoge tu pais</legend>
+
+
+
+  <label for="country">Escoge tu pais</label>
+  <!-- en selectpuedes colocar un atributo multipley se muestra con barrra-->
+<select class="" name="country" id="country" >
+  <optgroup>
+  <option value="pe">Peru</option>
+  <option value="co">Colombia</option>
+  <option value="ve">Venezuela</option>
+</optgroup>
+
+<optgroup label="Europa">
+  <option value="es">España</option>
+  <option value="It">Italia</option>
+</optgroup>
+
+<textarea name="mensaje" rows="8" cols="80" placeholder="escribe tu mensaje"></textarea>
+
+</select>
+
+  </fieldset>
+
+
+<input type=submit value="iniciar sesiòn">
+<!--<button type="button" name="button">Enviar</button>-->
+    </form>
+<script>
+
+document.getElementById('username')
+.addEventListener('keypup',  e =>{
+  console.log(e.target.value)
+})
+
+</script>
+
+  </body>
+</html>
