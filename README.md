@@ -1,2 +1,2 @@
-# peso
+# ProgrmacionBasica
 practica de programacion basica
