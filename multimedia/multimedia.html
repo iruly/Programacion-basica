@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <!--  para saber todas las propiedasdes que tiene la etiqueta video se puede ir a consola
+como por ejemplo  console.dir($0)
+
+-->
+  <body>
+    <!--  flowplayer reproductorde videotambien esta videojs tambien -->
+
+    <video  id="video" src="Daniela.mp4 " poster="poster.png"  controls ></video>
+  <audio src="yanotespero.mp3" controls>
+
+  </audio>
+
+<button id="play" > Play</button>
+<button id="pause" >Pause</button>
+
+<script>
+
+  const video= document.getElementById('video');
+    const play= document.getElementById('play');
+  const pause= document.getElementById('pause');
+
+  play.addEventListener('clik', () =>){
+    video.Play()
+  })
+
+  pause.addEventListener('clik', () =>){
+    video.pause();
+  })
+
+
+</script>
+
+  </body>
+</html>

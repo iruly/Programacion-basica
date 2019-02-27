@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>   Interactividad y contenido embedido</title>
+  </head>
+  <body>
+
+      <dialog  id="modal">
+        <h2>Curso html5 desde 0</h2>
+        <p>Precio: S/ 134.00</p>
+        <p>Profesora Irula Foneca</p>
+
+        <button id="close">Cerrar modal</button>
+        </dialog>
+
+        <button id="button">Abrir Modal</button>
+
+
+    <h1>Contenido interactivo</h1>
+
+
+      <details>
+        <summary>HTML</summary>
+      <p>Murkup language hipertext</p>
+      <p>Se creo en 1989</p>
+
+    </details>
+    <h1>Contenido embedido</h1>
+<!--  woofoo-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zOJ0L42a7MA"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AR1tLGQ7COs"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<iframe src="https://www.google.com/maps/embed?pb
+=!1m18!1m12!1m3!1d3924.331189410251!2d-75.46468408605173!3d10
+.395248468958147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+.1!3m3!1m2!1s0x8ef6243f38f6ce87%3A0x63cf26193927e175!2sLa+Carolina%2C+Cartagena%2C+Bol%C3%ADvar!5e0!3m2!1ses
+-419!2sco!4v1551192829915" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<script>
+  const modal = document.getElementById('modal');
+  const button = document.getElementById('button');
+
+  button.addeEvenListener('click' , () =>{
+  modal.setAttribute('open' ,  'true')
+  } )
+  </address>
+
+
+
+</script>
+
+
+
+
+  </body>
+</html>
