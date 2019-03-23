@@ -1,0 +1,93 @@
+:root{
+  --color-title: green;
+  --color-subtitle: purple;
+  --color-list: yellow;
+}
+
+.title-1{
+  color: var(--color-title);
+}
+.title-2{
+  color: var(--color-subtitle)
+}
+
+.title-1 + .subtitle{
+  color: var(--color-title)
+}
+.title-2 + .subtitle{
+  color: var(--color-subtitle)
+}
+
+body{
+
+    background: gray;
+}
+
+.list ul{
+
+    display: none;
+}
+
+ul > .list{
+    display: block;
+}
+ .list:hover ul {
+
+display: block;
+
+ }
+
+
+
+
+ul{
+  color: var(--color-list)
+}
+
+
+.hemano-mayor ~ .hermano{
+
+background: red;
+
+}
+
+.enable {
+
+  display: none;
+}
+
+
+.check:checked  ~ .enable{
+
+display: block;
+
+}
+
+
+.check:checked ~ .disable {
+
+  display: none;
+}
+
+
+
+[type= "email"] {
+
+border: 1px solid blue;
+
+}
+
+[type= "submit"] {
+
+background: red;
+color: purple;
+border: none;
+
+}
+
+
+[required] {
+
+  border: 2px solid red;
+  margin: .5em;
+}
